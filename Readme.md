@@ -17,12 +17,9 @@ this project.
 
 🔛 It takes 9 Hour to complte this project.
 
-> ### About More
-⚠️ Website are not responsive but ASAP i make them responsive.
 
-⚠️ Website was not complete complete website comes later days.
 
 🔁 Update comes in future 
 
 
-🔗[Live Link](https://62e2ee3b910eb207042cba3e--rococo-bombolone-1ca6c6.netlify.app/)
+🔗[Live Link]([https://62e2ee3b910eb207042cba3e--rococo-bombolone-1ca6c6.netlify.app/](https://ubiquitous-kelpie-fefec3.netlify.app/))
