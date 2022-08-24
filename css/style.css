@@ -2,19 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html{
+    font-size: 62.5%;
     font-family: 'Roboto',sans-serif;
 
-    background-color: var(--black);
+   
  
 }
 :root{
-    font-size: 62.5%;
+  
 
     --primary:#c91b28;
     --white:#fff;
@@ -29,9 +48,15 @@ html{
 
 }
 
-.container{
+body{
    
+    background-color: var(--black);
+    /* min-width: fit-content; */
+
+
 }
+
+
 
 
 
@@ -43,6 +68,7 @@ html{
     padding: 2rem 0;
     font-size: 1.5rem;
    padding: 1 10rem;
+ 
   
 
 
@@ -58,6 +84,7 @@ html{
     align-items: center;
     list-style: none;
     gap: 6rem;
+
 }
 
 .list-items a{
@@ -85,11 +112,14 @@ html{
     display:flex;
     justify-content:center;
     align-items: center;
+  
+    padding:0rem 10rem;
 }
 
 
 .left-hero-section{
-   width: 40%;
+   width: 50%;
+  
 }
 
 .left-hero-section img{
@@ -104,6 +134,8 @@ html{
  align-items: baseline;
  gap: 1.5rem;
  flex-direction: column;
+ width: 50%;
+
  
 
 }
@@ -126,7 +158,8 @@ html{
 
 .right-hero-section p{
    font-size:2rem;
-   width: 50rem;
+  
+   
    line-height: 1.5;
 
    
@@ -145,14 +178,17 @@ html{
 
 
 
+
 /* -----------------------------shadow-section------- */
 
 .shadow{
   background-color: #181818;
   width: 50vw;
-  height: 130vh;
+  height: 130%;
   z-index: -1;
   position: absolute;
+  display: none;
+
 
 }
 
@@ -161,46 +197,56 @@ html{
 /* ---------------service-section----------- */
 
 
-.serives-section{
-   display:flex;
-   justify-content:center;
-   align-items: center;
-   flex-direction: column;
-  
-    
-}
 
 .cards{
     display:flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+  
     margin-top: 5%;
-    gap: 3rem;
+  
+  
+    flex-wrap: wrap;
+
+
     
    
 }
 
 .card img{
-    width: 30%;
+   width: 50%;
 }
 
 .card {
-    width: 40rem;
-    height: 40rem;
+ 
+  
+
     background-color: #1e1e1e;
-    padding: 3rem;
+   
     display:flex;
-    justify-content:baseline;
-    align-items: right;
+    justify-content:center;
+   
+   
     flex-direction: column;
     font-size: 2rem;
     gap: 2rem;
     color: #fff;
+    width: 30%;
+  
+  
+    padding: 5rem;
+    margin: 2rem;
+    
+   
+  
+
+
+  
+    
 }
 
 .card p{
-    font-size: 2.5rem;
+    font-size: 2rem;
  
 }
 
@@ -450,10 +496,118 @@ footer{
 
 
 
+@media only screen and (max-width:768px){
+    .menu{
+        color: #fff;
+        font-size: 4rem;
+    }
+  
+   .nav-list{
+    display: none;
+   }
+    .hero-section{
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        width: 100%;
+    }
+    .left-hero-section{
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    .right-hero-section{
+        width: 100%;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .right-hero-section h1{
+        font-size: 5rem;
+    }
+    .right-hero-section p{
+        font-size: 1.5rem;
+    }
+    .check{
+        display: none;
+    }
+   
+    .card{
+        width: 100%;
+        padding: 2rem;
+        width: 80%;
+    }
+    .card img{
+        width: 100%;
+        margin: 0;
+    }
+    .card-img{
+        width: 20%;
+    }
+  .work{
+    flex-direction: column;
+    width: unset;
+    margin-top: 2rem;
 
+  }
+  .divide-two{
+    flex-wrap: wrap;
+  }
+  .project-feature-header{
+    width: unset;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    
+  }
+  .feature-heading h2{
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+  }
+  .feature-btn{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    width: 50%;
 
-
-
+  }
+  .projects{
+    margin: 0;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-card h2{
+    font-size: 2.5rem;
+  }
+  .project-card img{
+    padding: 0;
+  }
+  .project-card{
+    width: unset;
+  }
+  #project-card-fix{
+    padding: 0;
+  }
+  .project-card a{
+    font-size: 1.5rem;
+  }
+  .contact{
+    width: unset;
+    height: unset;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1rem;
+  }
+  .contact h2{
+    font-size: 2rem;
+  }
+  .contact p{
+    width: 100%;
+    line-height: unset;
+ font-size: 1.5rem;
+  }
+ 
+}
 
 
 
